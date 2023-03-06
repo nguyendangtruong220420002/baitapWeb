@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .col-1{
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+            }
+        .col-2{
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+        <h1>Contact Us</h1>
+        <p>Use the follwing forn to send a message to Example Cafe</p><br>
+    </div>
+    <div class="container">
+        <form action="">
+           <div class="row">
+                <div class="col-1">
+                    <label for="email">Your email</label>
+                </div>
+                 <div class="col-2">
+                    <input type="text" name="email" placeholder="***@gmail.com" required>
+                </div>
+           </div>
+           <div class="row">
+                <div class="col-1">
+                    <label for="message">Message</label>
+                </div>
+                <div class="col-2">
+                    <textarea name="message" placeholder="..." style="height: 150px ; width: 400px; "></textarea>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label for="?">How did you hear of us ?</label>
+                </div>
+                    <div class="col-2">
+                        <select name="?"> 
+                            <option value="Google">Google</option>
+                            <option value="ChatGPT">ChatGPT</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label for="Newsletter">Newsletter</label>
+                    </div>
+                    <div class="col-2">
+                        <input type="checkbox" name="Newsletter" value="">
+                        <label for="Newsletter">Enssure this box is cheked if you like to receive email updates</label>
+                    </div>
+                </div>
+                <div class="row">
+                     <input type="button" value="Send message">
+                </div>
+           </div>
+
+        </form>
+    </div>
+</body>
+</html>
